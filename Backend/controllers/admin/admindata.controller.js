@@ -151,6 +151,7 @@ export const getAllUser = async (req, res) => {
       filter.department = department;
     }
 
+    
     //# ================= Status Filter =================
     const ACTIVE_TIME = 15 * 60 * 1000;
 
