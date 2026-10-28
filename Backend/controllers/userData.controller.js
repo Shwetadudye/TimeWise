@@ -456,6 +456,7 @@ export const getAllUser = async (req, res) => {
         $gte: new Date(Date.now() - ACTIVE_TIME),
       };
     }
+    
 
     if (status === "Inactive") {
       filter.$or = [...(filter.$or || [])];
